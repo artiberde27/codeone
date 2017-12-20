@@ -28,9 +28,10 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-	document.getElementById("cameraGetPicture").addEventListener("click", cameraGetPicture);
+		//alert("test");
+		document.getElementById("cameraTakePicture").addEventListener("click", cameraGetPicture);
 		function cameraGetPicture() {
-		   alert("test");
+		  // alert("test");
 		   navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 		      destinationType: Camera.DestinationType.DATA_URL,
 		      sourceType: Camera.PictureSourceType.PHOTOLIBRARY
