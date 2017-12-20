@@ -36,8 +36,9 @@ var app = {
 		      destinationType: Camera.DestinationType.DATA_URL,
 		      sourceType: Camera.PictureSourceType.PHOTOLIBRARY
 		   });
-
+		   alert("test2");
 		   function onSuccess(imageURL) {
+			  alert('onSuccess: ' + imageURL);
 		      var image = document.getElementById('myImage');
 		      image.src = imageURL;
 		   }
