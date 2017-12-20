@@ -34,7 +34,7 @@ var app = {
 		   alert("test");
 		   navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 		      destinationType: Camera.DestinationType.DATA_URL,
-		      sourceType: Camera.PictureSourceType.PHOTOLIBRARY
+		     // sourceType: Camera.PictureSourceType.PHOTOLIBRARY
 		   });
 		   alert("test2");
 		   function onSuccess(imageURL) {
