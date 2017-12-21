@@ -28,15 +28,15 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-		//alert("test");
+		alert("testArti");
 		document.getElementById("cameraTakePicture").addEventListener("click", cameraGetPicture);
 		function cameraGetPicture() {
-		   alert("test");
+		  // alert("test");
 		   navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 		      destinationType: Camera.DestinationType.DATA_URL,
 		     // sourceType: Camera.PictureSourceType.PHOTOLIBRARY
 		   });
-		   alert("test2");
+		   //alert("test2");
 		   function onSuccess(imageURL) {
 			  alert('onSuccess: ' + imageURL);
 		      var image = document.getElementById('myImage');
